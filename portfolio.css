@@ -1,0 +1,252 @@
+.filing-table-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filing-table-header div {
+  margin: 1%;
+}
+.filing-main-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.spacer {
+  width: 35px;
+}
+.filing-row-2 {
+  background-color: #cccccc;
+}
+.filing-cell {
+  padding: 3px;
+}
+
+.application-number {
+  width: 4em;
+  padding: 3px;
+}
+
+.application-number:after {
+  height: 100%;
+  width: 0.2em;
+  background-color: #e07e27;
+   
+}
+
+.filing-main-row div {
+  margin: 1%;
+}
+
+.region-main-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 0.5px #e07e27;
+}
+
+.region-main-row div {
+  width: 20%;
+  margin: 1%;
+  padding-left: 3%;
+}
+
+.region-row-2 {
+  background-color: #cccccc;
+}
+
+.patents-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.patents-header div {
+  margin: 2%;
+}
+.filing-details-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.filing-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.patent-summary {
+  text-align: left;
+  padding: 7px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.bold {
+  font-weight: bold;
+}
+.bg-image {
+  top: 0;
+  left: -30px;
+  opacity: 0.4;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: -1;
+}
+
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  padding: 1px;
+  padding-bottom: 14px;
+  font-weight: 600;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+
+th,
+td {
+  vertical-align: text-top;
+  text-align: left;
+  text-indent: -.5em;
+  padding: 20px 0px 20px 15px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 17px;
+  font-style: normal;
+}
+
+th {
+  vertical-align: bottom;
+  background-color: #E07E27;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  padding: 10px;
+  font-style: normal;
+}
+
+.row td:nth-of-type(2), .cell td:nth-of-type(3) {
+  font-style: italic;
+}
+
+.row th:nth-of-type(3),
+.row td:nth-of-type(3),
+.cell th:nth-of-type(4),
+.cell td:nth-of-type(4) {
+  text-align: right;
+}
+
+td[colspan] {
+  background-color: #eee;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  text-indent: 0;
+}
+
+tr.shown, tr.hidden {
+  background-color: #eee;
+  display: table-row;
+}
+
+tr.hidden {
+  display: none;
+}
+
+.row button {
+  background-color: transparent;
+  border: .1em solid transparent;
+  font: inherit;
+  padding: 0.25em 0.5em 0.25em .25em;
+  width: 100%;
+  text-align: left;
+}
+
+.row button:focus, .row button:hover {
+  background-color: #ddd;
+  outline: .2em solid #00f;
+}
+
+.row button svg {
+  width: .8em;
+  height: .8em;
+  margin: 0 0 -.05em 0;
+  fill: #66f;
+  transition: transform 0.25s ease-in;
+  transform-origin: center 45%;
+}
+
+.row button:hover svg,
+.row button:focus svg {
+  fill: #00c;
+}
+
+/* Lean on programmatic state for styling */
+.row button[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.cell button {
+  font-size: 60%;
+  color: #000;
+  background-color: #00f;
+  padding: 0.3em 0.2em 0 0.2em;
+  border: 0.2em solid #00f;
+  border-radius: 50%;
+  line-height: 1;
+  text-align: center;
+  text-indent: 0;
+  transform: rotate(270deg);
+}
+
+.cell button svg {
+  width: 1.25em;
+  height: 1.25em;
+  fill: #fff;
+  transition: transform 0.25s ease-in;
+  transform-origin: center 45%;
+}
+
+.cell button:hover,
+.cell button:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+.cell button:hover svg,
+.cell button:focus svg {
+  fill: #00f;
+}
+
+/* Lean on programmatic state for styling */
+.cell button[aria-expanded="true"] svg {
+  transform: rotate(90deg);
+}
+
+/* Proven method to visually hide something but */
+/* still make it available to assistive technology */
+.visually-hidden {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+ /* Override Global fa  */
+.fa {
+  font-family: 'Montserrat' !important; 
+  font-weight: 600 !important; 
+  font-size: 16px !important;
+}

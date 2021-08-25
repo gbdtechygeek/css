@@ -1,0 +1,72 @@
+.logo {
+  text-align: right;
+}
+  .content {
+    margin-left: 2em;
+    background-color: #ffffff;
+    padding: 8px 18px;
+  }
+  button {
+    font-family: "Poppins", "Montserrat", sans-serif;
+    font-weight: bold;
+    border-radius: 2em 2em 0 0;
+    background-color: rgb(211, 210, 210);
+    padding: 8px 18px;
+    font-size: 9pt;
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer; /* make it a hand */
+  }
+  
+  button:focus {
+    border-radius: 2em 2em 0 0;
+    outline: black;
+    color: #ffffff;
+    background-color: #e07e27;
+  }
+  
+  .top-nav {
+    display: flex;
+    border-radius: 5px 5px 0px 0px;
+    justify-content: flex-start;
+    padding: 7px;
+    background-color: #ffffff;
+    margin-left: 59px;
+    margin-bottom: 2px;
+  }
+  
+  .top-nav-button {
+    margin: -2px;
+    padding: 15px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+  
+  .myButton {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Roboto_Slab";
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #404040;
+  }
+  .myButton:hover {
+    background-color: #000000;
+  }
+  .myButton:active {
+    position: relative;
+    top: 1px;
+  }
+  .side-tab-button {
+    transform: rotate(
+-90deg
+) translateX(-20px);
+    margin: 34px 30px 30px 30px;
+    padding: 15px;
+    border: 1px solid #fff;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
